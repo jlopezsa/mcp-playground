@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "mcp-playground"
+version = "0.1.0"
+description = ""
+authors = ["Julian Lopez <jlopezsa@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+
+[tool.poetry.group.dev.dependencies]
+yapf = "^0.43.0"
+
+[tool.poetry.scripts]
+client = "mcp_playground.client:main"
+server = "mcp_playground.server:main"
+
+[tool.yapf]
+based_on_style = "pep8"
+indent_width = 2
+continuation_indent_width = 2
+column_limit = 88
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
