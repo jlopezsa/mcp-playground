@@ -9,6 +9,11 @@ def send_response(response):
   sys.stdout.flush()
 
 
+def example_tool(args):
+  arg1 = args.get("arg1", args.get("args1"))
+  return f"example_tool received: {arg1}"
+
+
 def main():
   initialized = False
 
@@ -45,7 +50,44 @@ def main():
             response = {
               "jsonrpc": "2.0",
               "id": json_message["id"],
-              "result": ["tool1", "tool2"]
+              "result": {
+                "tools": [{
+                  "name": "example_tool",
+                  "description": "An example tool that does something.",
+                  "inputSchema": {
+                    "type": "object",
+                    "properties": {
+                      "arg1": {
+                        "type": "string",
+                        "description": "An example argument."
+                      }
+                    },
+                    "required": ["arg1"]
+                  }
+                }]
+              }
+            }
+            send_response(response)
+            break
+          case "tools/call":
+            tool_name = json_message['params']['name']
+            args = json_message['params']['args']
+            # todo create a response for the tool call, i.e call the right tool
+            response = {
+              "jsonrpc": "2.0",
+              "id": json_message["id"],
+              "result": {
+                "properties": {
+                  "content": {
+                    "description":
+                    "description of the content",
+                    "items": [{
+                      "type": "text",
+                      "text": f"Called tool {tool_name} with arguments {args}"
+                    }]
+                  }
+                }
+              }
             }
             send_response(response)
             break
