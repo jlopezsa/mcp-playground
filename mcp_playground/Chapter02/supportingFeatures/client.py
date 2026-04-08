@@ -9,10 +9,11 @@ from mcp_playground.utils.messages import (
 )
 
 # proc es un objeto proceso que representa el servidor MCP ejecutándose como un subproceso.
-proc = subprocess.Popen([sys.executable, "-m", "mcp_playground.server"],
-                        stdin=subprocess.PIPE,
-                        stdout=subprocess.PIPE,
-                        text=True)
+proc = subprocess.Popen(
+  [sys.executable, "-m", "mcp_playground.Chapter02.supportingFeatures.server"],
+  stdin=subprocess.PIPE,
+  stdout=subprocess.PIPE,
+  text=True)
 
 
 def send_message(proc, message):
