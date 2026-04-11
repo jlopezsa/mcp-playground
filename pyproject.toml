@@ -7,6 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.13"
+mcp = {extras = ["cli"], version = "^1.27.0"}
 
 [tool.poetry.group.dev.dependencies]
 yapf = "^0.43.0"

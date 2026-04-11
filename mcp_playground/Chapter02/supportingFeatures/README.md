@@ -27,6 +27,3 @@ sequenceDiagram
     S-->>C: Child exited with code 0
 ```
 
-![Frequency Diagram](./images/frequency-diagram.svg)
-![Frequency Diagram](./images/frequency-diagram-mermaid.png)
-
