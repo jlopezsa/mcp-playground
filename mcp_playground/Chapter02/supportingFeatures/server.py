@@ -10,7 +10,7 @@ def send_response(response):
 
 
 def example_tool(args):
-  arg1 = args.get("arg1", args.get("args1"))
+  arg1 = args.get("arg1")
   return f"example_tool received: {arg1}"
 
 
@@ -72,7 +72,10 @@ def main():
           case "tools/call":
             tool_name = json_message['params']['name']
             args = json_message['params']['args']
-            # todo create a response for the tool call, i.e call the right tool
+            if tool_name == "example_tool":
+              tool_result = example_tool(args)
+            else:
+              tool_result = f"Unknown tool: {tool_name}"
             response = {
               "jsonrpc": "2.0",
               "id": json_message["id"],
@@ -83,7 +86,7 @@ def main():
                     "description of the content",
                     "items": [{
                       "type": "text",
-                      "text": f"Called tool {tool_name} with arguments {args}"
+                      "text": tool_result
                     }]
                   }
                 }

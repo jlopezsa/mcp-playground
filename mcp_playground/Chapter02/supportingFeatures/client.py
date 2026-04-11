@@ -110,7 +110,7 @@ def main():
 
   tool = tools[0]
 
-  tool_call_response = call_tool(tool["name"], {"args1": "hello world!"})
+  tool_call_response = call_tool(tool["name"], {"arg1": "hello world!"})
   for content in tool_call_response:
     print_response(content['text'], prefix='[🤵 CLIENT <- 💻 SERVER] tool response: \n')
 
