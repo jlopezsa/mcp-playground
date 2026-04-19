@@ -4,9 +4,9 @@
 <!-- <h1>MCP-PLAYGROUND</h1> -->
 <!-- <p><em>Exploring and learning through MCP projects. This repository is a hands-on space for understanding how Model Context Protocol servers, clients, tools, resources, and prompts work in practice.</em></p> -->
 
-<img alt="last-commit" src="https://img.shields.io/github/last-commit/jlopezsa/ai-agents-playground?style=flat&amp;logo=git&amp;logoColor=white&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="repo-top-language" src="https://img.shields.io/github/languages/top/jlopezsa/ai-agents-playground?style=flat&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="repo-language-count" src="https://img.shields.io/github/languages/count/jlopezsa/ai-agents-playground?style=flat&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="last-commit" src="https://img.shields.io/github/last-commit/jlopezsa/mcp-playground?style=flat&amp;logo=git&amp;logoColor=white&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="repo-top-language" src="https://img.shields.io/github/languages/top/jlopezsa/mcp-playground?style=flat&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="repo-language-count" src="https://img.shields.io/github/languages/count/jlopezsa/mcp-playground?style=flat&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
 <p><em>Projects created using, among others, the tools and technologies listed below:</em></p>
 
 
