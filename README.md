@@ -7,7 +7,7 @@
 <img alt="last-commit" src="https://img.shields.io/github/last-commit/jlopezsa/ai-agents-playground?style=flat&amp;logo=git&amp;logoColor=white&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
 <img alt="repo-top-language" src="https://img.shields.io/github/languages/top/jlopezsa/ai-agents-playground?style=flat&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
 <img alt="repo-language-count" src="https://img.shields.io/github/languages/count/jlopezsa/ai-agents-playground?style=flat&amp;color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
-<p><em>Proyectos creados utilizando las herramientas y tecnologías, entre otras, que se mencionan a continuación:</em></p>
+<p><em>Projects created using, among others, the tools and technologies listed below:</em></p>
 
 
 <img alt="MCP" src="https://img.shields.io/badge/MCP-Model_Context_Protocol-0A7E8C?style=flat" style="margin: 0px 2px;">
@@ -26,7 +26,8 @@ This section presents an index of the MCP-based projects contained in this repos
 
 - [Project 1: Supporting Features](./mcp_playground/Chapter02/supportingFeatures/README.md)
 - [Project 2: Notifications, Reports, and Updates](./mcp_playground/Chapter02/notificationsReportsUpdates/README.md)
-- [Project 3: First Server](./mcp_playground/Chapter03/firstServer/README.md)
+- [Project 3: First STDIO Server](./mcp_playground/Chapter03/firstServer/README.md)
+- [Project 4: First SSE Server](./mcp_playground/Chapter04/sseServer/README.md)
 
 # Introduction to the Model Context Protocol (MCP)
 
